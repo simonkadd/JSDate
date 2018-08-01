@@ -1,0 +1,39 @@
+Javascript continuous date and time
+
+<title>Simon Kaddissi Web</title> <style> #container {width: 100%;} #head {text-align: center;} #main p{display: inline-block; width: 80px; padding: 10px; background-color: green; color: white; font-size: 1.5em; text-align: center;} #main { width: auto; margin: auto; text-align: center;} </style>
+Simon Kaddissi Web
+Javascript
+setTimeout, onload
+
+year :
+
+month :
+
+day :
+
+time :
+
+:
+:
+
+<script type="text/javascript">
+var timer = null function display_ct(){ var nd = new Date();
+
+document.getElementById("full").innerHTML = nd;
+
+document.getElementById("yr").innerHTML = nd.getFullYear();
+
+document.getElementById("mt").innerHTML = nd.getMonth();
+
+document.getElementById("dy").innerHTML = nd.getDate();
+
+document.getElementById("th").innerHTML = nd.getHours();
+
+document.getElementById("tm").innerHTML = nd.getMinutes();
+
+document.getElementById("ts").innerHTML = nd.getSeconds();
+
+timer = setTimeout("display_ct()",1000);
+}
+
+</script>
